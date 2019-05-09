@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add City Data </title>
+        <style>
+            body {
+                background-image: url("https://ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg");
+                color: slategray;
+                background-position: center;
+                font-family: "Optima";
+            } 
+            h1 {
+                text-align: center;
+            }
+            form {
+                text-align: center;
+            }
+        </style> 
+    </head>
+    <body>  
+        <a href = "/"> Return to Main Menu</a>
+        <h1> Add City Data </h1>
+        <form method = "POST" action = "">
+            Name: <input type = "text" name = "name"/>
+            Population: <input type = "number" name = "population"/>
+            Area: <input type = "number" name = "area"/> <br>
+            Capital City? : 
+            <select name = "capitalCity">
+                <option value = "True">Yes</option>
+                <option value = "False">No</option>     
+            </select>
+            Most Populous City? : 
+            <select name = "mostPopulousCity">
+                <option value = "True">Yes</option>
+                <option value = "False">No</option>     
+            </select>
+            Country: <input type = "text" name = "country"/>
+            <input type = "submit">
+        </form>
+    </body>
+</html>

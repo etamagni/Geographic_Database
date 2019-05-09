@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Country Data </title>
+        <style>
+            body {
+                background-image: url("https://ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1.jpg");
+                color: slategray;
+                background-position: center;
+                font-family: "Optima";
+            } 
+            h1 {
+                text-align: center;
+            }
+            table {
+                margin: 0 auto;
+                border-collapse: collapse;
+                border: 2px solid slategray;
+                background-color: white;
+            }
+            th {
+                color: white;
+                background-color: slategray;
+                border: None;
+            }
+            div {
+                text-align: center;
+            }
+        </style> 
+    </head>
+    <body>  
+        <a href = "/"> Return to Main Menu</a>
+        <h1> Countries </h1>
+        <table border = 1>
+            <th> Name </th>
+            <th> Population </th> 
+            <th> Area </th>
+            <th> Year of Establishment </th>
+            <th> Continent </th>
+            {% for data in dataDetails %}
+            <tr>
+                <td> {{data[0]}} </td>
+                <td> {{data[1]}} </td>
+                <td> {{data[2]}} </td>
+                <td> {{data[3]}} </td>
+                <td> {{data[4]}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div>
+            <a href = "/add-country"> Add</a> |
+            <a href = "/edit-country"> Edit</a> |
+            <a href = "/delete-country"> Delete</a>
+        </div>    
+    </body>
+</html>
